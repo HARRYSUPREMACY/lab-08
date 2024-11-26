@@ -1,82 +1,58 @@
-﻿using System;
-using System.Windows.Forms;
-
-namespace lab07_task_01
+namespace WinFormsApp2
 {
     public partial class Form1 : Form
     {
+        public string CustomerName { get; set; }
+        public string Country { get; set; }
+        public string Gender { get; set; }
+        public string Status { get; set; }
+        public string Hobbies { get; set; }
+
+
+
+
         public Form1()
         {
             InitializeComponent();
+            CustomerName = "";
+            Country = "";
+            Gender = "";
+            Status = "";
+            Hobbies = "";
+
+
         }
 
-        // Event handler for Add button click
-        private void buttonAdd_Click(object sender, EventArgs e)
+        private void Form1_Load(object sender, EventArgs e)
         {
-            if (string.IsNullOrEmpty(textBoxNum1.Text) || string.IsNullOrEmpty(textBoxNum2.Text))
-            {
-                MessageBox.Show("Please enter both numbers.");
-                return;
-            }
 
-            double num1 = Convert.ToDouble(textBoxNum1.Text);
-            double num2 = Convert.ToDouble(textBoxNum2.Text);
-            double result = num1 + num2;
-            textBoxResult.Text = result.ToString();
         }
 
-        // Event handler for Subtract button click
-        private void buttonSubtract_Click(object sender, EventArgs e)
+        public void button1_click(object sender, EventArgs e)
         {
-            if (string.IsNullOrEmpty(textBoxNum1.Text) || string.IsNullOrEmpty(textBoxNum2.Text))
-            {
-                MessageBox.Show("Please enter both numbers.");
-                return;
-            }
 
-            double num1 = Convert.ToDouble(textBoxNum1.Text);
-            double num2 = Convert.ToDouble(textBoxNum2.Text);
-            double result = num1 - num2;
-            textBoxResult.Text = result.ToString();
+            CustomerName = this.textBox1.Text;
+            Country = this.comboBox1.Text;
+            Gender = this.radioButton1.Checked? "Male" : radioButton2.Checked? "Female":"";
+            Status = this.radioButton3.Checked ? "Unmarried" : "";
+            Status = this.radioButton4.Checked ? "Married" : "";
+            Hobbies = this.checkBox1.Checked ? "Painting ":"";
+            Hobbies += this.checkBox2.Checked ? "Reading":"";
+
+
+
+
+
+
+            Form2 f2 = new Form2(CustomerName,Country,Gender,Hobbies, Status);
+
+            f2.ShowDialog();
+
         }
 
-        // Event handler for Multiply button click
-        private void buttonMultiply_Click(object sender, EventArgs e)
+        private void label2_Click(object sender, EventArgs e)
         {
-            if (string.IsNullOrEmpty(textBoxNum1.Text) || string.IsNullOrEmpty(textBoxNum2.Text))
-            {
-                MessageBox.Show("Please enter both numbers.");
-                return;
-            }
 
-            double num1 = Convert.ToDouble(textBoxNum1.Text);
-            double num2 = Convert.ToDouble(textBoxNum2.Text);
-            double result = num1 * num2;
-            textBoxResult.Text = result.ToString();
-        }
-
-        // Event handler for Divide button click
-        private void buttonDivide_Click(object sender, EventArgs e)
-        {
-            if (string.IsNullOrEmpty(textBoxNum1.Text) || string.IsNullOrEmpty(textBoxNum2.Text))
-            {
-                MessageBox.Show("Please enter both numbers.");
-                return;
-            }
-
-            double num1 = Convert.ToDouble(textBoxNum1.Text);
-            double num2 = Convert.ToDouble(textBoxNum2.Text);
-
-            // Check for division by zero
-            if (num2 == 0)
-            {
-                MessageBox.Show("Cannot divide by zero.");
-            }
-            else
-            {
-                double result = num1 / num2;
-                textBoxResult.Text = result.ToString();
-            }
         }
     }
 }

@@ -1,14 +1,14 @@
-﻿namespace lab07_task_01
+﻿namespace WinFormsApp2
 {
     partial class Form1
     {
         /// <summary>
-        /// Required designer variable.
+        ///  Required designer variable.
         /// </summary>
         private System.ComponentModel.IContainer components = null;
 
         /// <summary>
-        /// Clean up any resources being used.
+        ///  Clean up any resources being used.
         /// </summary>
         /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
         protected override void Dispose(bool disposing)
@@ -23,129 +23,197 @@
         #region Windows Form Designer generated code
 
         /// <summary>
-        /// Required method for Designer support - do not modify
-        /// the contents of this method with the code editor.
+        ///  Required method for Designer support - do not modify
+        ///  the contents of this method with the code editor.
         /// </summary>
         private void InitializeComponent()
         {
-            this.labelNum1 = new System.Windows.Forms.Label();
-            this.textBoxNum1 = new System.Windows.Forms.TextBox();
-            this.labelNum2 = new System.Windows.Forms.Label();
-            this.textBoxNum2 = new System.Windows.Forms.TextBox();
-            this.labelResult = new System.Windows.Forms.Label();
-            this.textBoxResult = new System.Windows.Forms.TextBox();
-            this.buttonAdd = new System.Windows.Forms.Button();
-            this.buttonDivide = new System.Windows.Forms.Button();
-            this.buttonMultiply = new System.Windows.Forms.Button();
-            this.buttonSubtract = new System.Windows.Forms.Button();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.checkBox2 = new System.Windows.Forms.CheckBox();
+            this.radioButton1 = new System.Windows.Forms.RadioButton();
+            this.radioButton2 = new System.Windows.Forms.RadioButton();
+            this.radioButton3 = new System.Windows.Forms.RadioButton();
+            this.radioButton4 = new System.Windows.Forms.RadioButton();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.groupBox1.SuspendLayout();
+            this.groupBox2.SuspendLayout();
+            this.groupBox3.SuspendLayout();
             this.SuspendLayout();
             // 
-            // labelNum1
+            // textBox1
             // 
-            this.labelNum1.AutoSize = true;
-            this.labelNum1.Location = new System.Drawing.Point(86, 38);
-            this.labelNum1.Name = "labelNum1";
-            this.labelNum1.Size = new System.Drawing.Size(117, 16);
-            this.labelNum1.TabIndex = 0;
-            this.labelNum1.Text = "Enter First Number";
+            this.textBox1.Location = new System.Drawing.Point(266, 64);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(100, 23);
+            this.textBox1.TabIndex = 0;
             // 
-            // textBoxNum1
+            // label1
             // 
-            this.textBoxNum1.Location = new System.Drawing.Point(294, 38);
-            this.textBoxNum1.Name = "textBoxNum1";
-            this.textBoxNum1.Size = new System.Drawing.Size(100, 22);
-            this.textBoxNum1.TabIndex = 1;
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(164, 67);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(94, 15);
+            this.label1.TabIndex = 2;
+            this.label1.Text = "Customer Name";
             // 
-            // labelNum2
+            // label2
             // 
-            this.labelNum2.AutoSize = true;
-            this.labelNum2.Location = new System.Drawing.Point(76, 87);
-            this.labelNum2.Name = "labelNum2";
-            this.labelNum2.Size = new System.Drawing.Size(142, 16);
-            this.labelNum2.TabIndex = 2;
-            this.labelNum2.Text = " Enter Second Number";
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(164, 124);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(50, 15);
+            this.label2.TabIndex = 3;
+            this.label2.Text = "Country";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
-            // textBoxNum2
+            // button1
             // 
-            this.textBoxNum2.Location = new System.Drawing.Point(294, 81);
-            this.textBoxNum2.Name = "textBoxNum2";
-            this.textBoxNum2.Size = new System.Drawing.Size(100, 22);
-            this.textBoxNum2.TabIndex = 3;
+            this.button1.Location = new System.Drawing.Point(382, 416);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 4;
+            this.button1.Text = "Preview";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_click);
             // 
-            // labelResult
+            // comboBox1
             // 
-            this.labelResult.AutoSize = true;
-            this.labelResult.Location = new System.Drawing.Point(88, 143);
-            this.labelResult.Name = "labelResult";
-            this.labelResult.Size = new System.Drawing.Size(45, 16);
-            this.labelResult.TabIndex = 4;
-            this.labelResult.Text = "Result";
+            this.comboBox1.AutoCompleteCustomSource.AddRange(new string[] {
+            "Pakistan",
+            "India",
+            "Bangladesh"});
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(266, 116);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(121, 23);
+            this.comboBox1.TabIndex = 5;
             // 
-            // textBoxResult
+            // checkBox1
             // 
-            this.textBoxResult.Location = new System.Drawing.Point(294, 143);
-            this.textBoxResult.Name = "textBoxResult";
-            this.textBoxResult.ReadOnly = true;
-            this.textBoxResult.Size = new System.Drawing.Size(100, 22);
-            this.textBoxResult.TabIndex = 5;
+            this.checkBox1.AutoSize = true;
+            this.checkBox1.Location = new System.Drawing.Point(28, 44);
+            this.checkBox1.Name = "checkBox1";
+            this.checkBox1.Size = new System.Drawing.Size(70, 19);
+            this.checkBox1.TabIndex = 6;
+            this.checkBox1.Text = "Painting";
+            this.checkBox1.UseVisualStyleBackColor = true;
             // 
-            // buttonAdd
+            // checkBox2
             // 
-            this.buttonAdd.Location = new System.Drawing.Point(89, 226);
-            this.buttonAdd.Name = "buttonAdd";
-            this.buttonAdd.Size = new System.Drawing.Size(75, 23);
-            this.buttonAdd.TabIndex = 6;
-            this.buttonAdd.Text = "Add";
-            this.buttonAdd.UseVisualStyleBackColor = true;
-            this.buttonAdd.Click += new System.EventHandler(this.buttonAdd_Click);
+            this.checkBox2.AutoSize = true;
+            this.checkBox2.Location = new System.Drawing.Point(111, 44);
+            this.checkBox2.Name = "checkBox2";
+            this.checkBox2.Size = new System.Drawing.Size(69, 19);
+            this.checkBox2.TabIndex = 7;
+            this.checkBox2.Text = "Reading";
+            this.checkBox2.UseVisualStyleBackColor = true;
             // 
-            // buttonDivide
+            // radioButton1
             // 
-            this.buttonDivide.Location = new System.Drawing.Point(421, 226);
-            this.buttonDivide.Name = "buttonDivide";
-            this.buttonDivide.Size = new System.Drawing.Size(75, 23);
-            this.buttonDivide.TabIndex = 7;
-            this.buttonDivide.Text = " Divide";
-            this.buttonDivide.UseVisualStyleBackColor = true;
-            this.buttonDivide.Click += new System.EventHandler(this.buttonDivide_Click);
+            this.radioButton1.AutoSize = true;
+            this.radioButton1.Location = new System.Drawing.Point(17, 47);
+            this.radioButton1.Name = "radioButton1";
+            this.radioButton1.Size = new System.Drawing.Size(51, 19);
+            this.radioButton1.TabIndex = 8;
+            this.radioButton1.TabStop = true;
+            this.radioButton1.Text = "Male";
+            this.radioButton1.UseVisualStyleBackColor = true;
             // 
-            // buttonMultiply
+            // radioButton2
             // 
-            this.buttonMultiply.Location = new System.Drawing.Point(319, 226);
-            this.buttonMultiply.Name = "buttonMultiply";
-            this.buttonMultiply.Size = new System.Drawing.Size(75, 23);
-            this.buttonMultiply.TabIndex = 8;
-            this.buttonMultiply.Text = "Multiply";
-            this.buttonMultiply.UseVisualStyleBackColor = true;
-            this.buttonMultiply.Click += new System.EventHandler(this.buttonMultiply_Click);
+            this.radioButton2.AutoSize = true;
+            this.radioButton2.Location = new System.Drawing.Point(117, 47);
+            this.radioButton2.Name = "radioButton2";
+            this.radioButton2.Size = new System.Drawing.Size(63, 19);
+            this.radioButton2.TabIndex = 9;
+            this.radioButton2.TabStop = true;
+            this.radioButton2.Text = "Female";
+            this.radioButton2.UseVisualStyleBackColor = true;
             // 
-            // buttonSubtract
+            // radioButton3
             // 
-            this.buttonSubtract.Location = new System.Drawing.Point(204, 226);
-            this.buttonSubtract.Name = "buttonSubtract";
-            this.buttonSubtract.Size = new System.Drawing.Size(75, 23);
-            this.buttonSubtract.TabIndex = 9;
-            this.buttonSubtract.Text = "Subtract";
-            this.buttonSubtract.UseVisualStyleBackColor = true;
-            this.buttonSubtract.Click += new System.EventHandler(this.buttonSubtract_Click);
+            this.radioButton3.AutoSize = true;
+            this.radioButton3.Location = new System.Drawing.Point(57, 68);
+            this.radioButton3.Name = "radioButton3";
+            this.radioButton3.Size = new System.Drawing.Size(81, 19);
+            this.radioButton3.TabIndex = 10;
+            this.radioButton3.TabStop = true;
+            this.radioButton3.Text = "Unmarried";
+            this.radioButton3.UseVisualStyleBackColor = true;
+            // 
+            // radioButton4
+            // 
+            this.radioButton4.AutoSize = true;
+            this.radioButton4.Location = new System.Drawing.Point(57, 34);
+            this.radioButton4.Name = "radioButton4";
+            this.radioButton4.Size = new System.Drawing.Size(66, 19);
+            this.radioButton4.TabIndex = 11;
+            this.radioButton4.TabStop = true;
+            this.radioButton4.Text = "Married";
+            this.radioButton4.UseVisualStyleBackColor = true;
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.checkBox1);
+            this.groupBox1.Controls.Add(this.checkBox2);
+            this.groupBox1.Location = new System.Drawing.Point(66, 297);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(200, 100);
+            this.groupBox1.TabIndex = 12;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Hobbies";
+            // 
+            // groupBox2
+            // 
+            this.groupBox2.Controls.Add(this.radioButton1);
+            this.groupBox2.Controls.Add(this.radioButton2);
+            this.groupBox2.Location = new System.Drawing.Point(77, 160);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(211, 100);
+            this.groupBox2.TabIndex = 13;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "Gender";
+            // 
+            // groupBox3
+            // 
+            this.groupBox3.Controls.Add(this.radioButton4);
+            this.groupBox3.Controls.Add(this.radioButton3);
+            this.groupBox3.Location = new System.Drawing.Point(325, 173);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Size = new System.Drawing.Size(200, 100);
+            this.groupBox3.TabIndex = 10;
+            this.groupBox3.TabStop = false;
+            this.groupBox3.Text = "Status";
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.buttonSubtract);
-            this.Controls.Add(this.buttonMultiply);
-            this.Controls.Add(this.buttonDivide);
-            this.Controls.Add(this.buttonAdd);
-            this.Controls.Add(this.textBoxResult);
-            this.Controls.Add(this.labelResult);
-            this.Controls.Add(this.textBoxNum2);
-            this.Controls.Add(this.labelNum2);
-            this.Controls.Add(this.textBoxNum1);
-            this.Controls.Add(this.labelNum1);
+            this.ClientSize = new System.Drawing.Size(553, 519);
+            this.Controls.Add(this.groupBox3);
+            this.Controls.Add(this.groupBox2);
+            this.Controls.Add(this.groupBox1);
+            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.textBox1);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
+            this.groupBox2.ResumeLayout(false);
+            this.groupBox2.PerformLayout();
+            this.groupBox3.ResumeLayout(false);
+            this.groupBox3.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -153,16 +221,19 @@
 
         #endregion
 
-        private System.Windows.Forms.Label labelNum1;
-        private System.Windows.Forms.TextBox textBoxNum1;
-        private System.Windows.Forms.Label labelNum2;
-        private System.Windows.Forms.TextBox textBoxNum2;
-        private System.Windows.Forms.Label labelResult;
-        private System.Windows.Forms.TextBox textBoxResult;
-        private System.Windows.Forms.Button buttonAdd;
-        private System.Windows.Forms.Button buttonDivide;
-        private System.Windows.Forms.Button buttonMultiply;
-        private System.Windows.Forms.Button buttonSubtract;
+        private TextBox textBox1;
+        private Label label1;
+        private Label label2;
+        private Button button1;
+        private ComboBox comboBox1;
+        private CheckBox checkBox1;
+        private CheckBox checkBox2;
+        private RadioButton radioButton1;
+        private RadioButton radioButton2;
+        private RadioButton radioButton3;
+        private RadioButton radioButton4;
+        private GroupBox groupBox1;
+        private GroupBox groupBox2;
+        private GroupBox groupBox3;
     }
 }
-
